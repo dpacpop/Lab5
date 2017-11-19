@@ -3,13 +3,13 @@ using namespace std;
 void klarge(int s, int arr[],int k)
 {
   for(int i=0;i<s;i++)
-    for(int j=i+1;j<s;j++)
+  { for(int j=i+1;j<s;j++)
       if(arr[i]<arr[j])
       {
         int temp=arr[i];
         arr[i]=arr[j];
         arr[j]=temp;
-      }
+      }}}
     cout<<"\n \nThe Kth largest element is: "<<arr[k-1];
 }
 
